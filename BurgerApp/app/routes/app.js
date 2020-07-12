@@ -1,11 +1,11 @@
 // Requiring our models
-var db = require("../models");
-// Dependencies
-// =============================================================
-const express = require("express");
-const app = express();
-const port = process.env.port 3006;
-const burgers = require("./routes/burgers")
+// var db = require("../models");
+// // Dependencies
+// // =============================================================
+// const express = require("express");
+// const app = express();
+// const port = process.env.port 3006;
+// const burgers = require("./routes/burgers")
 
 
 // Routes
@@ -31,3 +31,4 @@ module.exports = function (app) {
     console.log('deck route')
     res.sendFile(path.join(__dirname, "../public/deck.html"));
   });
+}
